@@ -6,17 +6,20 @@ SRC_DIR="${ROOT_DIR}/skills"
 
 CC_TARGET="${CC_TARGET:-$HOME/.claude/skills}"
 CODEX_TARGET="${CODEX_TARGET:-$HOME/.codex/skills}"
+GEMINI_TARGET="${GEMINI_TARGET:-$HOME/.gemini/skills}"
 
 usage() {
   cat <<'EOF'
 用法:
-  bash ./scripts/link-skills.sh           # 同时链接 cc + codex
+  bash ./scripts/link-skills.sh           # 同时链接 cc + codex + gemini
   bash ./scripts/link-skills.sh cc        # 仅链接 cc
   bash ./scripts/link-skills.sh codex     # 仅链接 codex
+  bash ./scripts/link-skills.sh gemini    # 仅链接 Gemini CLI
 
 可选环境变量:
   CC_TARGET=/path/to/cc/skills
   CODEX_TARGET=/path/to/codex/skills
+  GEMINI_TARGET=/path/to/gemini/skills
 EOF
 }
 
@@ -60,12 +63,16 @@ case "${1:-all}" in
   all)
     link_one "cc" "$CC_TARGET"
     link_one "codex" "$CODEX_TARGET"
+    link_one "gemini" "$GEMINI_TARGET"
     ;;
   cc)
     link_one "cc" "$CC_TARGET"
     ;;
   codex)
     link_one "codex" "$CODEX_TARGET"
+    ;;
+  gemini)
+    link_one "gemini" "$GEMINI_TARGET"
     ;;
   -h|--help|help)
     usage

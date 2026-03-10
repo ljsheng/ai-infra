@@ -6,6 +6,7 @@
   "scripts": {
     "link:skills": "bash ./scripts/link-skills.sh",
     "link:cc": "bash ./scripts/link-skills.sh cc",
-    "link:codex": "bash ./scripts/link-skills.sh codex"
+    "link:codex": "bash ./scripts/link-skills.sh codex",
+    "link:gemini": "bash ./scripts/link-skills.sh gemini"
   }
 }
