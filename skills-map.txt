@@ -214,3 +214,7 @@ https://github.com/MakFly/superpowers-symfony/tree/main/skills/symfony-scheduler
 https://github.com/MakFly/superpowers-symfony/tree/main/skills/symfony-voters => symfony-voters
 https://github.com/MakFly/superpowers-symfony/tree/main/skills/tdd-with-phpunit => tdd-with-phpunit
 https://github.com/MakFly/superpowers-symfony/tree/main/skills/twig-components => twig-components
+
+https://github.com/jeremylongshore/claude-code-plugins-plus-skills/tree/main/skills/01-devops-basics/branch-naming-helper => branch-naming-helper
+https://github.com/jeremylongshore/claude-code-plugins-plus-skills/tree/main/skills/01-devops-basics/docker-compose-creator => docker-compose-creator
+https://github.com/jeremylongshore/claude-code-plugins-plus-skills/tree/main/skills/01-devops-basics/dockerfile-generator => dockerfile-generator
