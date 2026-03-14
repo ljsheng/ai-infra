@@ -218,3 +218,40 @@ https://github.com/MakFly/superpowers-symfony/tree/main/skills/twig-components =
 https://github.com/jeremylongshore/claude-code-plugins-plus-skills/tree/main/skills/01-devops-basics/branch-naming-helper => branch-naming-helper
 https://github.com/jeremylongshore/claude-code-plugins-plus-skills/tree/main/skills/01-devops-basics/docker-compose-creator => docker-compose-creator
 https://github.com/jeremylongshore/claude-code-plugins-plus-skills/tree/main/skills/01-devops-basics/dockerfile-generator => dockerfile-generator
+
+https://github.com/NeverSight/learn-skills.dev/tree/main/data/skills-md/oimiragieo/agent-studio/java-expert => java-expert
+https://github.com/NeverSight/learn-skills.dev/tree/main/data/skills-md/pluginagentmarketplace/custom-plugin-qa/test-strategy => test-strategy
+
+https://github.com/giuseppe-trisciuoglio/developer-kit/tree/main/plugins/developer-kit-java/skills/graalvm-native-image => graalvm-native-image
+https://github.com/giuseppe-trisciuoglio/developer-kit/tree/main/plugins/developer-kit-core/skills/drawio-logical-diagrams => drawio-logical-diagrams
+
+https://github.com/mcollina/skills/tree/main/skills/linting-neostandard-eslint9 => linting-neostandard-eslint9
+https://github.com/mcollina/skills/tree/main/skills/typescript-magician => typescript-magician
+
+https://github.com/proffesor-for-testing/agentic-qe/tree/main/.claude/skills/brutal-honesty-review => brutal-honesty-review
+https://github.com/proffesor-for-testing/agentic-qe/tree/main/.claude/skills/six-thinking-hats => six-thinking-hats
+
+https://github.com/SethCalkins/claude-ios-swift-plugin/tree/main/skills/swift-concurrency-guard => swift-concurrency-guard
+https://github.com/SethCalkins/claude-ios-swift-plugin/tree/main/skills/swift-concurrency-expert => swift-concurrency-expert
+https://github.com/SethCalkins/claude-ios-swift-plugin/tree/main/skills/app-store-changelog => app-store-changelog
+https://github.com/SethCalkins/claude-ios-swift-plugin/tree/main/skills/swiftui-performance-audit => swiftui-performance-audit
+https://github.com/SethCalkins/claude-ios-swift-plugin/tree/main/skills/swiftui-ui-patterns => swiftui-ui-patterns
+https://github.com/SethCalkins/claude-ios-swift-plugin/tree/main/skills/swiftui-view-refactor => swiftui-view-refactor
+
+https://github.com/Mathews-Tom/praxis-skills/tree/main/skills/architecture-diagram => architecture-diagram
+https://github.com/Mathews-Tom/praxis-skills/tree/main/skills/architecture-reviewer => architecture-reviewer
+https://github.com/Mathews-Tom/praxis-skills/tree/main/skills/benchmark-runner => benchmark-runner
+https://github.com/Mathews-Tom/praxis-skills/tree/main/skills/code-refiner => code-refiner
+https://github.com/Mathews-Tom/praxis-skills/tree/main/skills/concept-to-image => concept-to-image
+https://github.com/Mathews-Tom/praxis-skills/tree/main/skills/concept-to-video => concept-to-video
+https://github.com/Mathews-Tom/praxis-skills/tree/main/skills/debug-investigator => debug-investigator
+https://github.com/Mathews-Tom/praxis-skills/tree/main/skills/engineering-retro => engineering-retro
+https://github.com/Mathews-Tom/praxis-skills/tree/main/skills/estimate-calibrator => estimate-calibrator
+https://github.com/Mathews-Tom/praxis-skills/tree/main/skills/md-to-pdf => md-to-pdf
+https://github.com/Mathews-Tom/praxis-skills/tree/main/skills/plan-review => plan-review
+https://github.com/Mathews-Tom/praxis-skills/tree/main/skills/pre-landing-review => pre-landing-review
+https://github.com/Mathews-Tom/praxis-skills/tree/main/skills/prompt-lab => prompt-lab
+https://github.com/Mathews-Tom/praxis-skills/tree/main/skills/rag-auditor => rag-auditor
+https://github.com/Mathews-Tom/praxis-skills/tree/main/skills/task-decomposer => task-decomposer
+https://github.com/Mathews-Tom/praxis-skills/tree/main/skills/youtube-analysis => youtube-analysis
+https://github.com/Mathews-Tom/praxis-skills/tree/main/skills/youtube-search => youtube-search
