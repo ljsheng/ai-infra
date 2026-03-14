@@ -15,6 +15,8 @@ https://github.com/anthropics/claude-cookbooks/tree/main/skills/custom_skills/an
 https://github.com/anthropics/claude-cookbooks/tree/main/skills/custom_skills/creating-financial-models => creating-financial-models
 
 https://github.com/openai/skills/tree/main/skills/.curated/screenshot => screenshot
+https://github.com/openai/skills/tree/main/skills/.curated/figma-implement-design => figma-implement-design
+https://github.com/openai/skills/tree/main/skills/.curated/security-ownership-map => security-ownership-map
 
 https://github.com/antvis/chart-visualization-skills/tree/master/skills/icon-retrieval => icon-retrieval
 
@@ -30,6 +32,7 @@ https://github.com/openclaw/skills/tree/main/skills/artyomx33/first-principles-d
 https://github.com/openclaw/skills/tree/main/skills/artyomx33/cross-pollination-engine => cross-pollination-engine
 https://github.com/openclaw/skills/tree/main/skills/artyomx33/inversion-strategist => inversion-strategist
 https://github.com/openclaw/skills/tree/main/skills/artyomx33/pre-mortem-analyst => pre-mortem-analyst
+https://github.com/openclaw/skills/tree/main/skills/evanfromdowntown/site-analyze => site-analyze
 
 https://github.com/kepano/obsidian-skills/tree/main/skills/obsidian-cli => obsidian-cli
 https://github.com/kepano/obsidian-skills/tree/main/skills/obsidian-markdown => obsidian-markdown
@@ -40,6 +43,7 @@ https://github.com/vercel-labs/agent-skills/tree/main/skills/react-best-practice
 https://github.com/vercel-labs/agent-skills/tree/main/skills/react-native-skills => vercel-react-native-skills
 
 https://github.com/callstackincubator/agent-skills/tree/main/skills/react-native-best-practices => react-native-best-practices
+https://github.com/callstackincubator/agent-skills/tree/main/skills/upgrading-react-native => upgrading-react-native
 
 https://github.com/vuejs-ai/skills/tree/main/skills/vue-best-practices => vue-best-practices
 https://github.com/vuejs-ai/skills/tree/main/skills/vue-testing-best-practices => vue-testing-best-practices
@@ -295,3 +299,8 @@ https://github.com/nette/claude-code/tree/master/plugins/nette-dev/skills/phpsta
 https://github.com/nette/claude-code/tree/master/plugins/nette-dev/skills/php-doc => php-doc
 
 https://github.com/pentiminax/agent-skills/tree/main/skills/phpunit-best-practices => phpunit-best-practices
+
+https://github.com/softaworks/agent-toolkit/tree/main/skills/session-handoff => session-handoff
+https://github.com/softaworks/agent-toolkit/tree/main/skills/backend-to-frontend-handoff-docs => backend-to-frontend-handoff-docs
+https://github.com/softaworks/agent-toolkit/tree/main/skills/lesson-learned => lesson-learned
+https://github.com/softaworks/agent-toolkit/tree/main/skills/skill-judge => skill-judge
