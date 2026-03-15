@@ -292,3 +292,7 @@ https://github.com/skyvanguard/infra-ops/tree/master/skills/service-monitor => s
 https://github.com/skyvanguard/infra-ops/tree/master/skills/system-diagnostics => system-diagnostics
 
 https://github.com/Jeffallan/claude-skills/tree/main/skills/vue-expert-js => vue-expert-js
+https://github.com/Jeffallan/claude-skills/tree/main/skills/php-pro => php-pro
+https://github.com/Jeffallan/claude-skills/tree/main/skills/laravel-specialist => laravel-specialist
+https://github.com/Jeffallan/claude-skills/tree/main/skills/nestjs-expert => nestjs-expert
+https://github.com/Jeffallan/claude-skills/tree/main/skills/nextjs-developer => nextjs-developer
