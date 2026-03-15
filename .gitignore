@@ -13,3 +13,5 @@ skills/.system
 
 # Backup files
 *.bak.*
+
+__pycache__
