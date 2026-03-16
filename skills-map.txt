@@ -176,6 +176,11 @@ https://github.com/wshobson/agents/tree/main/plugins/ui-design/skills/react-nati
 https://github.com/wshobson/agents/tree/main/plugins/ui-design/skills/responsive-design => responsive-design
 https://github.com/wshobson/agents/tree/main/plugins/ui-design/skills/visual-design-foundations => visual-design-foundations
 https://github.com/wshobson/agents/tree/main/plugins/cicd-automation/skills/github-actions-templates => github-actions-templates
+https://github.com/wshobson/agents/tree/main/plugins/cicd-automation/skills/gitlab-ci-patterns => gitlab-ci-patterns
+https://github.com/wshobson/agents/tree/main/plugins/developer-essentials/skills/git-advanced-workflows => git-advanced-workflows
+https://github.com/wshobson/agents/tree/main/plugins/developer-essentials/skills/error-handling-patterns => error-handling-patterns
+https://github.com/wshobson/agents/tree/main/plugins/game-development/skills/godot-gdscript-patterns => godot-gdscript-patterns
+https://github.com/wshobson/agents/tree/main/plugins/quantitative-trading/skills/risk-metrics-calculation => risk-metrics-calculation
 
 https://github.com/zebbern/claude-code-guide/tree/main/skills/active-directory-attacks => active-directory-attacks
 https://github.com/zebbern/claude-code-guide/tree/main/skills/api-fuzzing-bug-bounty => api-fuzzing-bug-bounty

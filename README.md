@@ -110,7 +110,7 @@ node ./scripts/validate-repo.js
 
 以下清单按仓库中实际存在的公共 `skills/*/SKILL.md` 整理，不包含 `.system` 内置 skill。名称可直接跳转到对应说明文件。
 
-### 公共 Skills（255）
+### 公共 Skills（260）
 
 | 名称 | 作用简介 |
 |------|----------|
@@ -197,6 +197,7 @@ node ./scripts/validate-repo.js
 | [employment-contract-templates](skills/employment-contract-templates/SKILL.md) | 编写雇佣合同、offer 和 HR 政策模板。 |
 | [engineering-retro](skills/engineering-retro/SKILL.md) | Git-based engineering retrospective analyzing commit history, PR patterns, an...。 |
 | [enterprise-proposal](skills/enterprise-proposal/SKILL.md) | Create comprehensive, BCG/McKinsey-style enterprise proposals with profession...。 |
+| [error-handling-patterns](skills/error-handling-patterns/SKILL.md) | Master error handling patterns across languages including exceptions, Result...。 |
 | [estimate-calibrator](skills/estimate-calibrator/SKILL.md) | Produces calibrated three-point estimates (best/likely/worst case) with expli...。 |
 | [ethical-hacking-methodology](skills/ethical-hacking-methodology/SKILL.md) | This skill should be used when the user asks to "learn ethical hacking", "und...。 |
 | [feature-dev](skills/feature-dev/SKILL.md) | Feature Development Workflow - 7-phase structured approach for building featu...。 |
@@ -208,9 +209,12 @@ node ./scripts/validate-repo.js
 | [first-principles-decomposer](skills/first-principles-decomposer/SKILL.md) | 用第一性原理拆解问题并重建方案。 |
 | [frontend-design-review](skills/frontend-design-review/SKILL.md) | 审查或设计高质量前端界面，兼顾美感、可用性与设计系统。 |
 | [gdpr-data-handling](skills/gdpr-data-handling/SKILL.md) | 实现 GDPR 合规的数据处理、同意与权利响应。 |
+| [git-advanced-workflows](skills/git-advanced-workflows/SKILL.md) | Master advanced Git workflows including rebasing, cherry-picking, bisect, wor...。 |
 | [github-actions-templates](skills/github-actions-templates/SKILL.md) | Create production-ready GitHub Actions workflows for automated testing, build...。 |
 | [github-deep-research](skills/github-deep-research/SKILL.md) | 对 GitHub 仓库做多轮深度研究和时间线分析。 |
+| [gitlab-ci-patterns](skills/gitlab-ci-patterns/SKILL.md) | Build GitLab CI/CD pipelines with multi-stage workflows, caching, and distrib...。 |
 | [go-concurrency-patterns](skills/go-concurrency-patterns/SKILL.md) | 编写和调试 Go 的 goroutine、channel 与并发模式。 |
+| [godot-gdscript-patterns](skills/godot-gdscript-patterns/SKILL.md) | Master Godot 4 GDScript patterns including signals, scenes, state machines, a...。 |
 | [graalvm-native-image](skills/graalvm-native-image/SKILL.md) | Provides expert guidance for building GraalVM Native Image executables from J...。 |
 | [gradle-build-performance](skills/gradle-build-performance/SKILL.md) | 诊断并优化 Android/Gradle 构建性能。 |
 | [helm-chart-scaffolding](skills/helm-chart-scaffolding/SKILL.md) | 搭建可复用、可验证的 Helm Chart。 |
@@ -287,6 +291,7 @@ node ./scripts/validate-repo.js
 | [readme-blueprint-generator](skills/readme-blueprint-generator/SKILL.md) | 分析仓库后生成结构化 README。 |
 | [referral-program](skills/referral-program/SKILL.md) | 设计推荐裂变、联盟与口碑增长机制。 |
 | [responsive-design](skills/responsive-design/SKILL.md) | 用现代 CSS 实现响应式与自适应布局。 |
+| [risk-metrics-calculation](skills/risk-metrics-calculation/SKILL.md) | Calculate portfolio risk metrics including VaR, CVaR, Sharpe, Sortino, and dr...。 |
 | [rust-async-patterns](skills/rust-async-patterns/SKILL.md) | 实践 Rust/Tokio 异步编程与并发模式。 |
 | [scientific-brainstorming](skills/scientific-brainstorming/SKILL.md) | 为科研问题做开放式创意发散和假设探索。 |
 | [screenshot](skills/screenshot/SKILL.md) | 在桌面或系统层面抓取屏幕截图。 |
