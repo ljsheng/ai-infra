@@ -192,12 +192,7 @@ https://github.com/zebbern/claude-code-guide/tree/main/skills/top-web-vulnerabil
 https://github.com/zebbern/claude-code-guide/tree/main/skills/wireshark-analysis => wireshark-analysis
 
 https://github.com/MakFly/superpowers-symfony/tree/main/skills/doctrine-batch-processing => doctrine-batch-processing
-https://github.com/MakFly/superpowers-symfony/tree/main/skills/doctrine-fetch-modes => doctrine-fetch-modes
-https://github.com/MakFly/superpowers-symfony/tree/main/skills/doctrine-relations => doctrine-relations
-https://github.com/MakFly/superpowers-symfony/tree/main/skills/doctrine-transactions => doctrine-transactions
-https://github.com/MakFly/superpowers-symfony/tree/main/skills/symfony-cache => symfony-cache
 https://github.com/MakFly/superpowers-symfony/tree/main/skills/symfony-messenger => symfony-messenger
-https://github.com/MakFly/superpowers-symfony/tree/main/skills/symfony-scheduler => symfony-scheduler
 https://github.com/MakFly/superpowers-symfony/tree/main/skills/symfony-voters => symfony-voters
 https://github.com/MakFly/superpowers-symfony/tree/main/skills/twig-components => twig-components
 
@@ -327,3 +322,5 @@ https://github.com/Mindrally/skills/tree/main/redis-best-practices => redis-best
 
 https://github.com/patricio0312rev/skills/tree/main/ci-cd/nginx-config-optimizer => nginx-config-optimizer
 https://github.com/patricio0312rev/skills/tree/main/ci-cd/terraform-module-builder => terraform-module-builder
+
+https://github.com/dengineproblem/agents-monorepo/tree/main/.claude/skills/detox-mobile-test => detox-mobile-test
