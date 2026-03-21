@@ -66,8 +66,8 @@
 
   | 检测信号 | 自动纳入候选池的 Skill |
   |----------|----------------------|
-  | `package.json` 含 `next` | `nextjs-developer`、`vercel-react-best-practices` |
-  | `package.json` 含 `react` | `react-hooks-master`、`responsive-design` |
+  | `package.json` 含 `next` | `nextjs-developer`、`vercel-react-best-practices`、`react-server-components` |
+  | `package.json` 含 `react` | `react-hooks`、`react-performance`、`responsive-design` |
   | `package.json` 含 `vue` | `vue-expert-js` |
   | `package.json` 含 `react-native` / `expo` | `react-native-best-practices`、`react-native-design` |
   | `package.json` 含 `detox` | `detox-mobile-test` |
@@ -129,7 +129,25 @@
   - 用户提到估时/排期/工期 → `estimate-calibrator`
   - 用户提到”分解任务””拆解需求” → `task-decomposer`
   - 用户展示截图/报错截图 → `screenshot` 或对应诊断 skill
-  - 改动涉及 React Hooks（useEffect / useMemo / useCallback / 自定义 Hook） → `react-hooks-master`
+  - 改动涉及 React Hooks（useEffect / useMemo / useCallback / 自定义 Hook） → `react-hooks`
+  - 改动涉及 React 性能优化（memoization / 虚拟化 / 代码分割 / Profiler） → `react-performance`
+  - 改动涉及 React Server Components / RSC / 服务端渲染流式加载 → `react-server-components`
+  - 用户提到"重构""代码坏味道""code smell""提取方法" → `refactoring-patterns`
+  - 用户提到"威胁建模""threat model""安全建模" → `security-threat-model`
+  - 用户提到"UI 不好看""视觉层级""间距配色" → `refactoring-ui` + `ux-heuristics`
+  - 用户提到"产品定位""怎么定位""竞争替代" → `obviously-awesome`
+  - 用户提到"跨越鸿沟""早期用户""主流市场" → `crossing-the-chasm`
+  - 用户提到"蓝海""红海""价值创新" → `blue-ocean-strategy`
+  - 用户提到"转化率""落地页优化""A/B 测试" → `cro-methodology`
+  - 用户提到"iOS 设计""HIG""人机交互指南" → `ios-hig-design`
+  - 用户提到"数据密集型系统""分布式存储""复制/分区策略" → `ddia-systems`
+  - 用户提到"用户访谈""验证想法""客户反馈" → `mom-test`
+  - 用户提到"说服设计""社会认同""稀缺性" → `influence-psychology`
+  - 用户提到"让人记住""信息传达""粘性信息" → `made-to-stick`
+  - 用户提到"软件设计哲学""深模块""信息隐藏" → `software-design-philosophy`
+  - 用户提到"务实程序员""DRY""正交性""曳光弹" → `pragmatic-programmer`
+  - GitHub PR 评审评论需要处理 → `gh-address-comments`
+  - GitHub CI 检查失败需要修复 → `gh-fix-ci`
   - 改动涉及 TypeScript 类型体操（泛型、条件类型、映射类型） → `typescript-advanced-types` + `typescript-magician`
   - 改动涉及 LLM prompt / embedding / RAG 管线 → `prompt-engineering-patterns` + `embedding-strategies` + `rag-auditor`
   - 改动涉及 Webman 框架 → `webman-best-practices`
@@ -161,6 +179,8 @@
   - 写了 GitHub Actions workflow → `create-github-action-workflow-specification`（规范校验）
   - 写了 OpenAPI spec → `openapi-spec-generation`（结构与完整性检查）
   - 产出了数据分析结论 → `statistical-analysis`（方法与显著性校验）
+  - 写了 React 组件 → `react-performance`（性能模式检查）
+  - 产出了安全架构 → `security-threat-model`（威胁建模验证）
 
 ### 多 Skill 编排（常见组合链路）
 
@@ -168,10 +188,10 @@
 
 | 场景 | 推荐链路（按顺序） | 说明 |
 |------|---------------------|------|
-| 从 0 到 1 做功能 | `create-prd` → `create-implementation-plan` → `feature-dev` → `verification-before-completion` | 需求 → 设计 → 实现 → 验收 |
+| 从 0 到 1 做功能 | `create-prd` → `task-decomposer` → `feature-dev` → `verification-before-completion` | 需求 → 拆解 → 实现 → 验收 |
 | 代码审查 | `context-map` → `pre-landing-review` → `lesson-learned` | 先看全貌 → 审查 → 沉淀经验 |
 | 性能优化 | `debug-investigator`（定位瓶颈） → 语言对应的性能 skill → `benchmark-runner` | 定位 → 优化 → 量化 |
-| 重构 | `architecture-blueprint-generator` → `code-refiner` → `verification-before-completion` | 现状 → 重构 → 验收 |
+| 重构 | `architecture-blueprint-generator` → `refactoring-patterns`（识别坏味道 + 重构手法） → `code-refiner` → `verification-before-completion` | 现状 → 手法 → 简化 → 验收 |
 | 深度调研 | `deep-research` → `consulting-analysis` 或 `data-storytelling` | 搜索 → 结构化输出 |
 | 数据库设计/治理 | `mysql-best-practices` 或 `postgresql-table-design`（Schema 设计） → `sql-optimization`（查询调优） → `sql-code-review`（安全审查） | 设计 → 调优 → 审查 |
 | 基础设施部署 | `terraform-module-builder`（IaC） → `docker-essentials`（容器化） → `k8s-manifest-generator` + `helm-chart-scaffolding`（编排） → `k8s-security-policies`（安全加固） | 资源 → 容器 → 编排 → 安全 |
@@ -185,9 +205,17 @@
 | 文档交付 | `markitdown`（格式转换） → `docx` / `pptx` / `xlsx`（办公文档生成） → `md-to-pdf`（PDF 导出） | 转换 → 生成 → 导出 |
 | LLM 应用开发 | `prompt-engineering-patterns`（提示词设计） → `embedding-strategies`（向量化） → `rag-auditor`（检索质量） → `llm-evaluation`（端到端评估） | 设计 → 索引 → 检索 → 评估 |
 | 竞品与市场分析 | `deep-research`（信息收集） → `competitive-intelligence`（竞品情报） → `competitive-teardown`（产品拆解） → `consulting-analysis`（结构化报告） | 搜索 → 情报 → 拆解 → 报告 |
-| 抖音/小红书运营 | `douyin-viral-content` 或 `xiaohongshu-commercial-growth`（内容创作） → `participation-driven-growth`（用户参与） → `fan-operations`（粉丝经营） | 内容 → 参与 → 经营 |
+| 抖音/小红书运营 | `douyin-viral-content` 或 `xiaohongshu-commercial-growth`（内容创作） → `fan-operations`（粉丝经营） → `private-domain`（私域引流） | 内容 → 经营 → 私域 |
 | 逆向工程/安全分析 | `nmap`（网络侦察） → `wireshark-analysis`（流量分析） → `binary-analysis-patterns`（二进制分析） → `memory-forensics`（内存取证） | 侦察 → 流量 → 二进制 → 取证 |
 | 决策与规划 | `first-principles-decomposer`（问题分解） → `pre-mortem-analyst`（失败预演） → `running-decision-processes`（决策流程） → `estimate-calibrator`（工期校准） | 分解 → 预演 → 决策 → 估时 |
+| 产品策略与定位 | `obviously-awesome`（定位分析） → `crossing-the-chasm`（跨越鸿沟策略） → `blue-ocean-strategy`（价值创新） | 定位 → 策略 → 创新 |
+| UI/UX 审查 | `ux-heuristics`（可用性评估） → `refactoring-ui`（视觉修复） → `ios-hig-design` 或 `web-design-guidelines`（平台规范） | 评估 → 修复 → 规范 |
+| React 全栈优化 | `react-hooks`（Hook 规范） → `react-performance`（性能优化） → `react-server-components`（服务端渲染） | 规范 → 性能 → SSR |
+| GitHub PR 流程 | `gh-fix-ci`（修复 CI） → `gh-address-comments`（处理评审意见） → `pre-landing-review`（上线前审查） | CI → 评审 → 审查 |
+| 用户沟通与说服 | `mom-test`（用户访谈） → `influence-psychology`（说服设计） → `made-to-stick`（信息传达） | 洞察 → 说服 → 记忆 |
+| 转化率优化 | `cro-methodology`（转化审计 + A/B 测试） → `ux-heuristics`（可用性验证） → `refactoring-ui`（视觉修复） | 审计 → 验证 → 修复 |
+| 分布式数据系统 | `ddia-systems`（存储/复制/分区选型） → `system-design`（架构设计） → `architecture-reviewer`（架构审查） | 选型 → 设计 → 审查 |
+| 软件工程方法论 | `pragmatic-programmer`（元原则） → `software-design-philosophy`（复杂度管理） → `refactoring-patterns`（重构手法） | 原则 → 哲学 → 实践 |
 
 - 编排链路是推荐路径，非强制全部执行；根据任务粒度裁剪，但至少包含链路的首尾两个 skill（起点定义 + 终点验收）。
 - 若用户只请求链路中的某一步，执行该步后告知上下游 skill 的存在和价值，由用户决定是否继续。
@@ -197,7 +225,7 @@
 - 回复用户时，除说明本轮已使用的 skill 外，还必须补充”下一步推荐 skill”，用于完成后续任务或增强结果。
 - “下一步推荐 skill”必须写明 3 件事：`skill 名称`、`实现/增强什么`、`期望达到的效果`，要给出具体的 prompt 让用户去使用。
 - 若当前不推荐下一步 skill，也要明确说明原因，例如”当前任务已闭合””缺少必要输入””启用成本高于收益”。
-- 下一步推荐以 1 到 3 个 skill 为限，只推荐与当前目标直接相关、能显著提升结果的 skill，禁止罗列式刷清单。
+- 下一步推荐以 1 到 5 个 skill 为限，只推荐与当前目标直接相关、能显著提升结果的 skill，禁止罗列式刷清单。
 
 ### 反模式（禁止）
 

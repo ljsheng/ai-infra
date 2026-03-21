@@ -16,6 +16,9 @@ https://github.com/anthropics/claude-cookbooks/tree/main/skills/custom_skills/cr
 https://github.com/openai/skills/tree/main/skills/.curated/screenshot => screenshot
 https://github.com/openai/skills/tree/main/skills/.curated/figma-implement-design => figma-implement-design
 https://github.com/openai/skills/tree/main/skills/.curated/security-ownership-map => security-ownership-map
+https://github.com/openai/skills/tree/main/skills/.curated/security-threat-model => security-threat-model
+https://github.com/openai/skills/tree/main/skills/.curated/gh-fix-ci => gh-fix-ci
+https://github.com/openai/skills/tree/main/skills/.curated/gh-address-comments => gh-address-comments
 
 https://github.com/antvis/chart-visualization-skills/tree/master/skills/icon-retrieval => icon-retrieval
 https://github.com/antvis/chart-visualization-skills/tree/master/skills/narrative-text-visualization => narrative-text-visualization
@@ -111,8 +114,6 @@ https://github.com/github/awesome-copilot/tree/main/skills/apple-appstore-review
 https://github.com/github/awesome-copilot/tree/main/skills/architecture-blueprint-generator => architecture-blueprint-generator
 https://github.com/github/awesome-copilot/tree/main/skills/chrome-devtools => chrome-devtools
 https://github.com/github/awesome-copilot/tree/main/skills/context-map => context-map
-https://github.com/github/awesome-copilot/tree/main/skills/create-specification => create-specification
-https://github.com/github/awesome-copilot/tree/main/skills/create-implementation-plan => create-implementation-plan
 https://github.com/github/awesome-copilot/tree/main/skills/java-junit => java-junit
 https://github.com/github/awesome-copilot/tree/main/skills/javascript-typescript-jest => javascript-typescript-jest
 https://github.com/github/awesome-copilot/tree/main/skills/meeting-minutes => meeting-minutes
@@ -371,3 +372,22 @@ https://github.com/petekp/agent-skills/tree/main/skills/exhaustive-systems-analy
 https://github.com/ehmo/platform-design-skills/tree/main/skills/macos => macos-design-guidelines
 https://github.com/ehmo/platform-design-skills/tree/main/skills/android => android-design-guidelines
 https://github.com/ehmo/platform-design-skills/tree/main/skills/web => web-design-guidelines
+
+https://github.com/wondelai/skills/tree/main/mom-test => mom-test
+https://github.com/wondelai/skills/tree/main/blue-ocean-strategy => blue-ocean-strategy
+https://github.com/wondelai/skills/tree/main/cro-methodology => cro-methodology
+https://github.com/wondelai/skills/tree/main/crossing-the-chasm => crossing-the-chasm
+https://github.com/wondelai/skills/tree/main/ddia-systems => ddia-systems
+https://github.com/wondelai/skills/tree/main/influence-psychology => influence-psychology
+https://github.com/wondelai/skills/tree/main/ios-hig-design => ios-hig-design
+https://github.com/wondelai/skills/tree/main/made-to-stick => made-to-stick
+https://github.com/wondelai/skills/tree/main/obviously-awesome => obviously-awesome
+https://github.com/wondelai/skills/tree/main/pragmatic-programmer => pragmatic-programmer
+https://github.com/wondelai/skills/tree/main/refactoring-patterns => refactoring-patterns
+https://github.com/wondelai/skills/tree/main/refactoring-ui => refactoring-ui
+https://github.com/wondelai/skills/tree/main/software-design-philosophy => software-design-philosophy
+https://github.com/wondelai/skills/tree/main/ux-heuristics => ux-heuristics
+
+https://github.com/claude-dev-suite/claude-dev-suite/tree/main/skills/frontend-frameworks/react-hooks => react-hooks
+https://github.com/claude-dev-suite/claude-dev-suite/tree/main/skills/frontend-frameworks/react-performance => react-performance
+https://github.com/claude-dev-suite/claude-dev-suite/tree/main/skills/frontend-frameworks/react-server-components => react-server-components
