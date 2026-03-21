@@ -391,3 +391,5 @@ https://github.com/wondelai/skills/tree/main/ux-heuristics => ux-heuristics
 https://github.com/claude-dev-suite/claude-dev-suite/tree/main/skills/frontend-frameworks/react-hooks => react-hooks
 https://github.com/claude-dev-suite/claude-dev-suite/tree/main/skills/frontend-frameworks/react-performance => react-performance
 https://github.com/claude-dev-suite/claude-dev-suite/tree/main/skills/frontend-frameworks/react-server-components => react-server-components
+
+https://github.com/terrylica/cc-skills/tree/main/plugins/itp-hooks/skills/hooks-development => hooks-development
