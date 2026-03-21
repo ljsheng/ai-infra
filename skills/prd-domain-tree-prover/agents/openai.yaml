@@ -1,0 +1,4 @@
+interface:
+  display_name: "PRD Domain Tree Prover"
+  short_description: "Recursively prove minimal PRD domain splits"
+  default_prompt: "Use $prd-domain-tree-prover to decompose this PRD into a minimal, formally validated leaf-domain tree."
