@@ -361,3 +361,13 @@ https://github.com/anthropics/knowledge-work-plugins/tree/main/enterprise-search
 https://github.com/anthropics/knowledge-work-plugins/tree/main/legal/skills/legal-risk-assessment => legal-risk-assessment
 https://github.com/anthropics/knowledge-work-plugins/tree/main/operations/skills/process-optimization => process-optimization
 https://github.com/anthropics/knowledge-work-plugins/tree/main/sales/skills/competitive-intelligence => competitive-intelligence
+
+https://github.com/petekp/agent-skills/tree/main/skills/model-first-reasoning => model-first-reasoning
+https://github.com/petekp/agent-skills/tree/main/skills/proposal-review => proposal-review
+https://github.com/petekp/agent-skills/tree/main/skills/seam-ripper => seam-ripper
+https://github.com/petekp/agent-skills/tree/main/skills/hierarchical-matching-systems => hierarchical-matching-systems
+https://github.com/petekp/agent-skills/tree/main/skills/exhaustive-systems-analysis => exhaustive-systems-analysis
+
+https://github.com/ehmo/platform-design-skills/tree/main/skills/macos => macos-design-guidelines
+https://github.com/ehmo/platform-design-skills/tree/main/skills/android => android-design-guidelines
+https://github.com/ehmo/platform-design-skills/tree/main/skills/web => web-design-guidelines
