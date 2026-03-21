@@ -18,6 +18,7 @@ https://github.com/openai/skills/tree/main/skills/.curated/figma-implement-desig
 https://github.com/openai/skills/tree/main/skills/.curated/security-ownership-map => security-ownership-map
 
 https://github.com/antvis/chart-visualization-skills/tree/master/skills/icon-retrieval => icon-retrieval
+https://github.com/antvis/chart-visualization-skills/tree/master/skills/narrative-text-visualization => narrative-text-visualization
 
 https://github.com/MicrosoftDocs/mcp/tree/main/skills/microsoft-docs => microsoft-docs
 https://github.com/MicrosoftDocs/mcp/tree/main/skills/microsoft-code-reference => microsoft-code-reference
@@ -168,7 +169,6 @@ https://github.com/wshobson/agents/tree/main/plugins/startup-business-analyst/sk
 https://github.com/wshobson/agents/tree/main/plugins/systems-programming/skills/rust-async-patterns => rust-async-patterns
 https://github.com/wshobson/agents/tree/main/plugins/systems-programming/skills/memory-safety-patterns => memory-safety-patterns
 https://github.com/wshobson/agents/tree/main/plugins/systems-programming/skills/go-concurrency-patterns => go-concurrency-patterns
-https://github.com/wshobson/agents/tree/main/plugins/ui-design/skills/accessibility-compliance => accessibility-compliance
 https://github.com/wshobson/agents/tree/main/plugins/ui-design/skills/design-system-patterns => design-system-patterns
 https://github.com/wshobson/agents/tree/main/plugins/ui-design/skills/interaction-design => interaction-design
 https://github.com/wshobson/agents/tree/main/plugins/ui-design/skills/react-native-design => react-native-design
@@ -200,13 +200,6 @@ https://github.com/jeremylongshore/claude-code-plugins-plus-skills/tree/main/ski
 
 https://github.com/NeverSight/learn-skills.dev/tree/main/data/skills-md/pluginagentmarketplace/custom-plugin-qa/test-strategy => test-strategy
 https://github.com/NeverSight/learn-skills.dev/tree/main/data/skills-md/nikhilbhansali/enterprise-proposal/enterprise-proposal => enterprise-proposal
-
-https://github.com/qiao-925/qiao-skills/tree/main/global/single-responsibility => single-responsibility
-https://github.com/qiao-925/qiao-skills/tree/main/global/code-complexity-control/core-first-simplicity => core-first-simplicity
-https://github.com/qiao-925/qiao-skills/tree/main/global/code-complexity-control/file-header-comments => file-header-comments
-https://github.com/qiao-925/qiao-skills/tree/main/global/code-complexity-control/file-size-limit => file-size-limit
-https://github.com/qiao-925/qiao-skills/tree/main/global/agent-collaboration/critical-thinking-guidance => critical-thinking-guidance
-https://github.com/qiao-925/qiao-skills/tree/main/project/project-guide-assemble/whetstone => whetstone
 
 https://github.com/oimiragieo/agent-studio/tree/main/.claude/skills/java-expert => java-expert
 
@@ -324,3 +317,68 @@ https://github.com/patricio0312rev/skills/tree/main/ci-cd/nginx-config-optimizer
 https://github.com/patricio0312rev/skills/tree/main/ci-cd/terraform-module-builder => terraform-module-builder
 
 https://github.com/dengineproblem/agents-monorepo/tree/main/.claude/skills/detox-mobile-test => detox-mobile-test
+
+https://github.com/shirenchuang/web-content-fetcher => web-content-fetcher
+
+https://github.com/remotion-dev/skills/tree/main/skills/remotion => remotion-best-practices
+
+https://github.com/microsoft/GitHub-Copilot-for-Azure/tree/main/.github/skills/markdown-token-optimizer => markdown-token-optimizer
+
+https://github.com/browser-use/browser-use/tree/main/skills/browser-use => browser-use
+
+https://github.com/nodnarbnitram/claude-code-extensions/tree/main/.claude/skills/tauri-v2 => tauri-v2
+
+https://github.com/apollographql/skills/tree/main/skills/rust-best-practices => rust-best-practices
+
+https://github.com/gmh5225/awesome-game-security/tree/main/.claude/skills/windows-kernel => windows-kernel-security
+
+https://github.com/BrownFineSecurity/iothackbot/tree/master/skills/apktool => apktool
+https://github.com/BrownFineSecurity/iothackbot/tree/master/skills/chipsec => chipsec
+https://github.com/BrownFineSecurity/iothackbot/tree/master/skills/jadx => jadx
+https://github.com/BrownFineSecurity/iothackbot/tree/master/skills/nmap => nmap
+
+https://github.com/addyosmani/web-quality-skills/tree/main/skills/seo => seo
+https://github.com/addyosmani/web-quality-skills/tree/main/skills/core-web-vitals => core-web-vitals
+https://github.com/addyosmani/web-quality-skills/tree/main/skills/web-quality-audit => web-quality-audit
+
+https://github.com/supercent-io/skills-template/tree/main/.agent-skills/monitoring-observability => monitoring-observability
+https://github.com/supercent-io/skills-template/tree/main/.agent-skills/user-guide-writing => user-guide-writing
+
+https://github.com/TencentCloudBase/skills/tree/main/skills/miniprogram-development => miniprogram-development
+
+https://github.com/shipshitdev/library/tree/master/skills/fundraise-advisor => fundraise-advisor
+https://github.com/shipshitdev/library/tree/master/skills/funnel-architect => funnel-architect
+https://github.com/shipshitdev/library/tree/master/skills/leads-researcher => leads-researcher
+https://github.com/shipshitdev/library/tree/master/skills/idea-validator => idea-validator
+https://github.com/shipshitdev/library/tree/master/skills/lead-channel-optimizer => lead-channel-optimizer
+https://github.com/shipshitdev/library/tree/master/skills/startup-icp-definer => startup-icp-definer
+
+https://github.com/kaustav-payday/pitch-deck-reviewer => pitch-deck-reviewer
+
+https://github.com/VickyHan924/Self-media-Script/tree/main/.claude/skills/douyin-viral-content => douyin-viral-content
+
+https://github.com/liu-wei-ai/douyin-video-summary => douyin-video-summary
+
+https://github.com/vivy-yi/xiaohongshu-skills/tree/main/skills/02-%E8%B4%A6%E5%8F%B7%E8%BF%90%E8%90%A5/personal-branding-advanced => personal-branding-advanced
+https://github.com/vivy-yi/xiaohongshu-skills/tree/main/skills/02-%E8%B4%A6%E5%8F%B7%E8%BF%90%E8%90%A5/private-domain => private-domain
+https://github.com/vivy-yi/xiaohongshu-skills/tree/main/skills/02-%E8%B4%A6%E5%8F%B7%E8%BF%90%E8%90%A5/fan-operations => fan-operations
+
+https://github.com/anthropics/knowledge-work-plugins/tree/main/design/skills/design-critique => design-critique
+https://github.com/anthropics/knowledge-work-plugins/tree/main/design/skills/design-handoff => design-handoff
+https://github.com/anthropics/knowledge-work-plugins/tree/main/design/skills/accessibility-review => accessibility-review
+https://github.com/anthropics/knowledge-work-plugins/tree/main/customer-support/skills/customer-research => customer-research
+https://github.com/anthropics/knowledge-work-plugins/tree/main/data/skills/data-visualization => data-visualization
+https://github.com/anthropics/knowledge-work-plugins/tree/main/data/skills/statistical-analysis => statistical-analysis
+https://github.com/anthropics/knowledge-work-plugins/tree/main/engineering/skills/incident-response => incident-response
+https://github.com/anthropics/knowledge-work-plugins/tree/main/engineering/skills/system-design => system-design
+https://github.com/anthropics/knowledge-work-plugins/tree/main/engineering/skills/tech-debt => tech-debt
+https://github.com/anthropics/knowledge-work-plugins/tree/main/engineering/skills/testing-strategy => testing-strategy
+https://github.com/anthropics/knowledge-work-plugins/tree/main/enterprise-search/skills/knowledge-synthesis => knowledge-synthesis
+https://github.com/anthropics/knowledge-work-plugins/tree/main/enterprise-search/skills/search-strategy => search-strategy
+https://github.com/anthropics/knowledge-work-plugins/tree/main/legal/skills/legal-risk-assessment => legal-risk-assessment
+https://github.com/anthropics/knowledge-work-plugins/tree/main/legal/skills/legal-response => legal-response
+https://github.com/anthropics/knowledge-work-plugins/tree/main/marketing/skills/email-sequence => email-sequence
+https://github.com/anthropics/knowledge-work-plugins/tree/main/operations/skills/process-optimization => process-optimization
+https://github.com/anthropics/knowledge-work-plugins/tree/main/product-management/skills/competitive-brief => competitive-brief
+https://github.com/anthropics/knowledge-work-plugins/tree/main/product-management/skills/synthesize-research => synthesize-research
+https://github.com/anthropics/knowledge-work-plugins/tree/main/sales/skills/competitive-intelligence => competitive-intelligence

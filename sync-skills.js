@@ -60,15 +60,26 @@ function parseArgs(argv) {
 function parseRemoteUrl(remoteUrl) {
   const parsed = new URL(remoteUrl);
   if (!['http:', 'https:'].includes(parsed.protocol) || parsed.hostname !== 'github.com') {
-    throw new Error('仅支持 https://github.com/.../tree/... 格式。');
+    throw new Error('仅支持 https://github.com/... 格式。');
   }
 
   const parts = parsed.pathname.split('/').filter(Boolean);
-  if (parts.length < 5 || parts[2] !== 'tree') {
-    throw new Error('URL 必须是 /<owner>/<repo>/tree/<ref>/<path> 结构。');
+
+  // 支持仓库根 URL：https://github.com/<owner>/<repo>
+  if (parts.length === 2) {
+    return {
+      owner: parts[0],
+      repo: parts[1],
+      ref: null, // 使用仓库默认分支
+      remotePath: '.', // 仓库根目录
+    };
   }
 
-  const remotePath = parts.slice(4).join('/').trim();
+  if (parts.length < 5 || parts[2] !== 'tree') {
+    throw new Error('URL 必须是 /<owner>/<repo>/tree/<ref>/<path> 或 /<owner>/<repo> 结构。');
+  }
+
+  const remotePath = decodeURIComponent(parts.slice(4).join('/').trim());
   if (!remotePath) {
     throw new Error('URL 中缺少远程目录路径。');
   }
@@ -166,30 +177,33 @@ function runGit(args) {
 }
 
 function cloneSparseGroup(owner, repo, ref, remotePaths, workdir) {
-  const checkoutDir = path.join(workdir, `${owner}_${repo}_${ref}`.replaceAll('/', '_'));
-  runGit([
-    'clone',
-    '--depth',
-    '1',
-    '--filter=blob:none',
-    '--sparse',
-    '--branch',
-    ref,
-    `https://github.com/${owner}/${repo}.git`,
-    checkoutDir,
-  ]);
-  runGit([
-    '-C',
-    checkoutDir,
-    'sparse-checkout',
-    'set',
-    '--no-cone',
-    ...Array.from(new Set(remotePaths)).sort(),
-  ]);
+  const refLabel = ref || 'HEAD';
+  const checkoutDir = path.join(workdir, `${owner}_${repo}_${refLabel}`.replaceAll('/', '_'));
+
+  // 判断是否所有路径都是仓库根目录（不需要 sparse checkout）
+  const needsSparse = remotePaths.some((p) => p !== '.');
+
+  const cloneArgs = ['clone', '--depth', '1', '--filter=blob:none'];
+  if (needsSparse) {
+    cloneArgs.push('--sparse');
+  }
+  if (ref) {
+    cloneArgs.push('--branch', ref);
+  }
+  cloneArgs.push(`https://github.com/${owner}/${repo}.git`, checkoutDir);
+  runGit(cloneArgs);
+
+  if (needsSparse) {
+    const sparsePaths = Array.from(new Set(remotePaths.filter((p) => p !== '.'))).sort();
+    if (sparsePaths.length > 0) {
+      runGit(['-C', checkoutDir, 'sparse-checkout', 'set', '--no-cone', ...sparsePaths]);
+    }
+  }
+
   return checkoutDir;
 }
 
-function syncOne(sourcePath, destinationPath, dryRun) {
+function syncOne(sourcePath, destinationPath, dryRun, isRepoRoot) {
   if (!fs.existsSync(sourcePath) || !fs.statSync(sourcePath).isDirectory()) {
     throw new Error(`远程目录不存在: ${sourcePath}`);
   }
@@ -205,7 +219,10 @@ function syncOne(sourcePath, destinationPath, dryRun) {
   }
 
   fs.mkdirSync(path.dirname(destinationPath), { recursive: true });
-  fs.cpSync(sourcePath, destinationPath, { recursive: true });
+  fs.cpSync(sourcePath, destinationPath, {
+    recursive: true,
+    filter: isRepoRoot ? (src) => !src.includes(`${path.sep}.git`) : undefined,
+  });
 }
 
 function main() {
@@ -224,7 +241,7 @@ function main() {
 
     const grouped = new Map();
     for (const mapping of mappings) {
-      const key = `${mapping.owner}/${mapping.repo}@${mapping.ref}`;
+      const key = `${mapping.owner}/${mapping.repo}@${mapping.ref || 'HEAD'}`;
       if (!grouped.has(key)) {
         grouped.set(key, []);
       }
@@ -237,7 +254,7 @@ function main() {
     try {
       for (const items of grouped.values()) {
         const [{ owner, repo, ref }] = items;
-        console.log(`\n==> 拉取 ${owner}/${repo}@${ref}`);
+        console.log(`\n==> 拉取 ${owner}/${repo}@${ref || 'HEAD'}`);
 
         let checkoutDir;
         try {
@@ -249,7 +266,7 @@ function main() {
             tempDir,
           );
         } catch (error) {
-          const message = `${owner}/${repo}@${ref} 拉取失败: ${error.message}`;
+          const message = `${owner}/${repo}@${ref || 'HEAD'} 拉取失败: ${error.message}`;
           failures.push(message);
           console.error(`[失败] ${message}`);
           continue;
@@ -260,7 +277,7 @@ function main() {
           const sourcePath = path.join(checkoutDir, item.remotePath);
           console.log(`  - ${item.remoteUrl} => ${destination}`);
           try {
-            syncOne(sourcePath, destination, args.dryRun);
+            syncOne(sourcePath, destination, args.dryRun, item.remotePath === '.');
           } catch (error) {
             const message = `${item.remoteUrl} 同步失败: ${error.message}`;
             failures.push(message);
