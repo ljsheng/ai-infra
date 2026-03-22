@@ -34,6 +34,28 @@
 - 若目标文件存在非本次任务的已有改动，必须做最小化编辑，禁止覆盖、回退、重排或批量格式化他人的改动；无法安全共存时，先停下并向用户确认边界。
 - 提交前必须再次检查 `git diff --cached --stat` 与 `git diff --cached`，确认 staged diff 只包含当前任务；发现无关文件、无关 hunk 或来源不明的变更时，先移出提交范围再继续。
 
+## 命令执行效率（必须遵守）
+
+### 禁止重复执行耗时命令
+
+- **一次执行、多次查询**：编译、测试、构建等耗时命令（`cargo test`、`npm run build`、`make`、`gradle build` 等）只执行一次，将完整输出保存到临时文件，后续按需 grep/读取不同部分。
+
+  ```bash
+  # ✅ 正确：跑一次，存完整输出，按需查询
+  cargo test --features local-tun 2>&1 | tee /tmp/test-output.log
+  grep -E "FAILED" /tmp/test-output.log
+  grep -E "test result" /tmp/test-output.log
+
+  # ❌ 错误：同一命令跑多次，只为 grep 不同关键词
+  cargo test --features local-tun 2>&1 | grep -E "FAILED"
+  cargo test --features local-tun 2>&1 | grep -E "test result"
+  cargo test --features local-tun 2>&1 | grep -E "warning"
+  ```
+
+- **判断是否需要过滤**：如果命令输出量可控（< 200 行），直接读取完整输出，不需要 grep 预筛；只在输出量确实过大时才用过滤，且一次过滤应尽量覆盖所有需要的信息。
+- **并行投机的边界**：对轻量级命令（`git status`、`ls`、`cat`）可以并行投机执行；对需要编译或网络请求的重量级命令，禁止并行发射同一命令的多个变体。
+- **后台任务输出复用**：通过 `run_in_background` 启动的耗时命令，完成后应读取完整输出一次性分析，而不是重新执行命令来补充遗漏的信息。
+
 ## Skill 路由与用户引导（必须遵守）
 
 ### 匹配与选择
