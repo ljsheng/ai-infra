@@ -9,6 +9,7 @@
     "link:codex": "node ./scripts/link-skills.js codex",
     "link:gemini": "node ./scripts/link-skills.js gemini",
     "sync:memory": "node ./scripts/sync-agent-memory.js",
+    "sync:hooks": "node ./scripts/sync-hooks.js",
     "test:claude-hooks": "node ./scripts/test-claude-hooks.js",
     "validate:repo": "node ./scripts/validate-repo.js"
   }
