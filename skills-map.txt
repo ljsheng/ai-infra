@@ -58,6 +58,11 @@ https://github.com/coreyhaines31/marketingskills/tree/main/skills/referral-progr
 https://github.com/coreyhaines31/marketingskills/tree/main/skills/site-architecture => site-architecture
 
 https://github.com/ComposioHQ/awesome-claude-skills/tree/master/domain-name-brainstormer => domain-name-brainstormer
+https://github.com/ComposioHQ/awesome-claude-skills/tree/master/meeting-insights-analyzer => meeting-insights-analyzer
+https://github.com/ComposioHQ/awesome-claude-skills/tree/master/competitive-ads-extractor => competitive-ads-extractor
+https://github.com/ComposioHQ/awesome-claude-skills/tree/master/lead-research-assistant => lead-research-assistant
+
+https://github.com/ComposioHQ/awesome-codex-skills/tree/master/meeting-notes-and-actions => meeting-notes-and-actions
 
 https://github.com/phuryn/pm-skills/tree/main/pm-marketing-growth/skills/product-name => product-name
 https://github.com/phuryn/pm-skills/tree/main/pm-product-discovery/skills/opportunity-solution-tree => opportunity-solution-tree
@@ -393,3 +398,25 @@ https://github.com/claude-dev-suite/claude-dev-suite/tree/main/skills/frontend-f
 https://github.com/claude-dev-suite/claude-dev-suite/tree/main/skills/frontend-frameworks/react-server-components => react-server-components
 
 https://github.com/terrylica/cc-skills/tree/main/plugins/itp-hooks/skills/hooks-development => hooks-development
+
+https://github.com/netease-youdao/LobsterAI/tree/main/SKILLs/technology-news-search => technology-search
+
+https://github.com/yunshu0909/yunshu_skillshub/tree/master/github-repo-search => github-repo-search
+https://github.com/yunshu0909/yunshu_skillshub/tree/master/priority-judge => priority-judge
+https://github.com/yunshu0909/yunshu_skillshub/tree/master/product-naming => product-naming
+https://github.com/yunshu0909/yunshu_skillshub/tree/master/thinking-partner => thinking-partner
+https://github.com/yunshu0909/yunshu_skillshub/tree/master/version-planner => version-planner
+
+https://github.com/affaan-m/everything-claude-code/tree/main/docs/zh-CN/skills/laravel-patterns => laravel-patterns
+https://github.com/affaan-m/everything-claude-code/tree/main/docs/zh-CN/skills/laravel-security => laravel-security
+https://github.com/affaan-m/everything-claude-code/tree/main/docs/zh-CN/skills/laravel-tdd => laravel-tdd
+https://github.com/affaan-m/everything-claude-code/tree/main/docs/zh-CN/skills/laravel-verification => laravel-verification
+https://github.com/affaan-m/everything-claude-code/tree/main/docs/zh-CN/skills/liquid-glass-design => liquid-glass-design
+
+https://github.com/norsizu/xhs-graphic-generator => xhs-graphic-generator
+
+https://github.com/regenrek/agent-skills/tree/main/skills/debug-lldb => debug-lldb
+https://github.com/regenrek/agent-skills/tree/main/skills/redesign-my-landingpage => redesign-my-landingpage
+https://github.com/regenrek/agent-skills/tree/main/skills/root-cause-finder => root-cause-finder
+
+https://github.com/shaowenfu/ClawTools/tree/main/skills/social-platform-safety => social-platform-safety
