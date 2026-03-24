@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "本地 skills 管理与多 Agent 软链工具",
   "scripts": {
-    "sync:skills": "node ./sync-skills.js",
+    "sync:skills": "node ./scripts/sync-skills.js",
     "link:skills": "node ./scripts/link-skills.js",
     "link:cc": "node ./scripts/link-skills.js cc",
     "link:codex": "node ./scripts/link-skills.js codex",

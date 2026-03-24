@@ -128,7 +128,7 @@ function main() {
     }
 
     const sourceFile = path.resolve(
-      args.source ?? path.join(__dirname, '..', 'AGENTS.md'),
+      args.source ?? path.join(__dirname, '..', 'memory', 'AGENTS.md'),
     );
 
     if (!fs.existsSync(sourceFile)) {

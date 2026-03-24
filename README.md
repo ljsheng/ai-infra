@@ -6,8 +6,8 @@
 
 - 技能目录：`./skills`
 - 映射文件：`./skills-map.txt`
-- 同步脚本：`./sync-skills.js`
-- Agent memory：`./AGENTS.md`
+- 同步脚本：`./scripts/sync-skills.js`
+- Agent memory：`./memory/AGENTS.md`
 - Claude Code 脚手架：`./.claude/`
 
 ## 常用命令
@@ -35,7 +35,7 @@ npm run validate:repo
 
 ```bash
 # 1) 按映射同步远程 skills 到本地 ./skills
-node ./sync-skills.js
+node ./scripts/sync-skills.js
 
 # 2) 一键把本仓库 skills 软链到 cc + codex + gemini
 node ./scripts/link-skills.js
@@ -50,11 +50,11 @@ node ./scripts/sync-agent-memory.js
 node ./scripts/validate-repo.js
 ```
 
-> 💡 **跨平台使用**：仓库自维护脚本已统一为 Node.js，执行这些命令不再依赖本机 Python。`sync:memory` 现在会直接创建文件链接，修改源 `AGENTS.md` 后目标文件会同步反映。
+> 💡 **跨平台使用**：仓库自维护脚本已统一为 Node.js，执行这些命令不再依赖本机 Python。`sync:memory` 现在会直接创建文件链接，修改源 `memory/AGENTS.md` 后目标文件会同步反映。
 
 ## Agent 协作约定
 
-- `AGENTS.md` 是仓库级 agent memory 的单一事实来源；需要同步到本机的 Claude Code、Codex、Gemini CLI 时，统一执行 `npm run sync:memory`。该命令会直接创建文件链接，而不是复制内容。
+- `memory/AGENTS.md` 是仓库级 agent memory 的单一事实来源；需要同步到本机的 Claude Code、Codex、Gemini CLI 时，统一执行 `npm run sync:memory`。该命令会直接创建文件链接，而不是复制内容。
 - `.claude/` 提供了从 `tele-backend` 提炼并适配后的轻量 Claude Code 脚手架，包括：
   - `settings.example.json`：项目级权限与 hook 示例
   - `hooks/`：通用风险拦截与 prompt 提示

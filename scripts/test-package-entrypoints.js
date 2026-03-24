@@ -115,7 +115,7 @@ function testSyncMemory() {
     const result = runNpm('sync:memory', buildTempEnv(tempHome));
     assert.equal(result.status, 0, result.stderr || result.stdout);
 
-    const sourceFile = path.join(repoRoot(), 'AGENTS.md');
+    const sourceFile = path.join(repoRoot(), 'memory', 'AGENTS.md');
     assertFile(path.join(tempHome, '.claude', 'CLAUDE.md'), sourceFile);
     assertFile(path.join(tempHome, '.codex', 'AGENTS.md'), sourceFile);
     assertFile(path.join(tempHome, '.gemini', 'GEMINI.md'), sourceFile);

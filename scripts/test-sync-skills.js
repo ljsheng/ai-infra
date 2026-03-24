@@ -9,7 +9,7 @@ const path = require('node:path');
 const { Colors, runCommand } = require('./utils');
 
 function main() {
-  const scriptPath = path.join(__dirname, '..', 'sync-skills.js');
+  const scriptPath = path.join(__dirname, 'sync-skills.js');
 
   try {
     const helpResult = runCommand(process.execPath, [scriptPath, '--help'], {

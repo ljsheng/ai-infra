@@ -7,12 +7,12 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 
-const { runCommand } = require('./scripts/utils');
+const { runCommand } = require('./utils');
 
 function showHelp() {
   console.log(`Usage:
   npm run sync:skills
-  node ./sync-skills.js [--map <file>] [--dest <dir>] [--dry-run]
+  node ./scripts/sync-skills.js [--map <file>] [--dest <dir>] [--dry-run]
 `);
 }
 
