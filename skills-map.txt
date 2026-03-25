@@ -30,7 +30,6 @@ https://github.com/openclaw/openclaw/tree/main/skills/apple-notes => apple-notes
 https://github.com/openclaw/openclaw/tree/main/skills/apple-reminders => apple-reminders
 
 https://github.com/openclaw/skills/tree/main/skills/pespringer/docker-essentials-1-0-0 => docker-essentials
-https://github.com/openclaw/skills/tree/main/skills/bastos/conventional-commits => conventional-commits
 https://github.com/openclaw/skills/tree/main/skills/artyomx33/first-principles-decomposer => first-principles-decomposer
 https://github.com/openclaw/skills/tree/main/skills/artyomx33/cross-pollination-engine => cross-pollination-engine
 https://github.com/openclaw/skills/tree/main/skills/artyomx33/inversion-strategist => inversion-strategist
@@ -147,9 +146,7 @@ https://github.com/wshobson/agents/tree/main/plugins/llm-application-dev/skills/
 https://github.com/wshobson/agents/tree/main/plugins/llm-application-dev/skills/similarity-search-patterns => similarity-search-patterns
 https://github.com/wshobson/agents/tree/main/plugins/llm-application-dev/skills/vector-index-tuning => vector-index-tuning
 https://github.com/wshobson/agents/tree/main/plugins/python-development/skills/async-python-patterns => async-python-patterns
-https://github.com/wshobson/agents/tree/main/plugins/python-development/skills/python-anti-patterns => python-anti-patterns
 https://github.com/wshobson/agents/tree/main/plugins/python-development/skills/python-background-jobs => python-background-jobs
-https://github.com/wshobson/agents/tree/main/plugins/python-development/skills/python-code-style => python-code-style
 https://github.com/wshobson/agents/tree/main/plugins/python-development/skills/python-design-patterns => python-design-patterns
 https://github.com/wshobson/agents/tree/main/plugins/python-development/skills/python-error-handling => python-error-handling
 https://github.com/wshobson/agents/tree/main/plugins/python-development/skills/python-observability => python-observability
@@ -165,7 +162,6 @@ https://github.com/wshobson/agents/tree/main/plugins/security-scanning/skills/at
 https://github.com/wshobson/agents/tree/main/plugins/security-scanning/skills/security-requirement-extraction => security-requirement-extraction
 https://github.com/wshobson/agents/tree/main/plugins/security-scanning/skills/stride-analysis-patterns => stride-analysis-patterns
 https://github.com/wshobson/agents/tree/main/plugins/security-scanning/skills/threat-mitigation-mapping => threat-mitigation-mapping
-https://github.com/wshobson/agents/tree/main/plugins/shell-scripting/skills/bash-defensive-patterns => bash-defensive-patterns
 
 https://github.com/wshobson/agents/tree/main/plugins/startup-business-analyst/skills/market-sizing-analysis => market-sizing-analysis
 https://github.com/wshobson/agents/tree/main/plugins/startup-business-analyst/skills/team-composition-analysis => team-composition-analysis

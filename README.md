@@ -144,7 +144,6 @@ node ./scripts/validate-repo.js
 | [backend-to-frontend-handoff-docs](skills/backend-to-frontend-handoff-docs/SKILL.md) | Create API handoff documentation for frontend developers。 |
 | [baoyu-article-illustrator](skills/baoyu-article-illustrator/SKILL.md) | 为文章识别配图点并生成插图方案。 |
 | [baoyu-compress-image](skills/baoyu-compress-image/SKILL.md) | 压缩图片并转换为 WebP/PNG。 |
-| [bash-defensive-patterns](skills/bash-defensive-patterns/SKILL.md) | 编写具备容错与安全性的生产级 Bash 脚本。 |
 | [benchmark-runner](skills/benchmark-runner/SKILL.md) | Designs structured benchmarks for comparing algorithms, models, or implementa...。 |
 | [binary-analysis-patterns](skills/binary-analysis-patterns/SKILL.md) | 进行反汇编、反编译和控制流等二进制静态分析。 |
 | [blue-ocean-strategy](skills/blue-ocean-strategy/SKILL.md) | Create uncontested market space using value innovation instead of competing h...。 |
@@ -170,7 +169,6 @@ node ./scripts/validate-repo.js
 | [content-humanizer](skills/content-humanizer/SKILL.md) | 把 AI 文案改写得更自然、更像真人表达。 |
 | [content-strategy](skills/content-strategy/SKILL.md) | 规划内容策略、主题集群与内容路线图。 |
 | [context-map](skills/context-map/SKILL.md) | 改动前梳理与任务相关的文件地图。 |
-| [conventional-commits](skills/conventional-commits/SKILL.md) | 按 Conventional Commits 规范生成提交信息。 |
 | [copy-editing](skills/copy-editing/SKILL.md) | 对现有营销文案做多轮编辑、润色与校对。 |
 | [core-web-vitals](skills/core-web-vitals/SKILL.md) | Optimize Core Web Vitals (LCP, INP, CLS) for better page experience and searc...。 |
 | [create-github-action-workflow-specification](skills/create-github-action-workflow-specification/SKILL.md) | Create a formal specification for an existing GitHub Actions CI/CD workflow,...。 |
@@ -330,9 +328,7 @@ node ./scripts/validate-repo.js
 | [proposal-review](skills/proposal-review/SKILL.md) | Facilitate methodical review of proposals (technical designs, product specs,...。 |
 | [protocol-reverse-engineering](skills/protocol-reverse-engineering/SKILL.md) | 逆向网络协议、报文结构和通信流程。 |
 | [pua](skills/pua/SKILL.md) | Forces high-agency exhaustive problem-solving with corporate PUA pressure esc...。 |
-| [python-anti-patterns](skills/python-anti-patterns/SKILL.md) | 审查并规避常见 Python 反模式。 |
 | [python-background-jobs](skills/python-background-jobs/SKILL.md) | 实现 Python 后台任务、队列和事件驱动处理。 |
-| [python-code-style](skills/python-code-style/SKILL.md) | 统一 Python 代码风格、命名与文档规范。 |
 | [python-design-patterns](skills/python-design-patterns/SKILL.md) | 用 Python 设计模式改善结构、职责和组合方式。 |
 | [python-error-handling](skills/python-error-handling/SKILL.md) | 设计 Python 输入校验、异常体系与部分失败处理。 |
 | [python-observability](skills/python-observability/SKILL.md) | 为 Python 应用补充日志、指标和链路追踪。 |

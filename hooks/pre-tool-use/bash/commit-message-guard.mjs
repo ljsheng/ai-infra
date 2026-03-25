@@ -1,8 +1,17 @@
 /**
  * 提交信息质量守门 hook（PreToolUse — Bash）
  *
- * 拦截 git commit 命令，检查 commit message 是否过于模糊或过短。
+ * 拦截 git commit 命令，强制执行：
+ * 1. Conventional Commits 格式（type(scope): description）
+ * 2. 禁止模糊/过短信息
+ *
+ * 已替代原 conventional-commits skill，自动化零干预。
  */
+
+const CC_TYPES = ["feat", "fix", "docs", "style", "refactor", "perf", "test", "build", "ci", "chore", "revert"];
+const CC_PATTERN = new RegExp(
+  `^(${CC_TYPES.join("|")})(\\([^)]+\\))?!?:\\s.+`
+);
 
 export async function run(payload) {
   const command = payload?.tool_input?.command || "";
@@ -31,10 +40,13 @@ export async function run(payload) {
     errors.push(`首行仅 ${firstLine.length} 字符，过短，无法传达有效信息`);
   }
 
-  // 3. 推荐 conventional commits 格式（仅对英文开头的 message 提示，不阻塞）
-  const conventionalPattern = /^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\(.+\))?!?:\s/;
-  if (!conventionalPattern.test(firstLine) && /^[a-zA-Z]/.test(firstLine)) {
-    errors.push("建议使用 Conventional Commits 格式：feat(scope): description");
+  // 3. 强制 Conventional Commits 格式
+  if (!CC_PATTERN.test(firstLine)) {
+    errors.push(
+      `必须使用 Conventional Commits 格式：<type>(<scope>): <description>\n` +
+      `  允许的 type: ${CC_TYPES.join(", ")}\n` +
+      `  示例: feat(auth): 添加 OAuth2 登录支持`
+    );
   }
 
   if (errors.length > 0) {
