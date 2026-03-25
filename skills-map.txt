@@ -166,7 +166,7 @@ https://github.com/wshobson/agents/tree/main/plugins/security-scanning/skills/se
 https://github.com/wshobson/agents/tree/main/plugins/security-scanning/skills/stride-analysis-patterns => stride-analysis-patterns
 https://github.com/wshobson/agents/tree/main/plugins/security-scanning/skills/threat-mitigation-mapping => threat-mitigation-mapping
 https://github.com/wshobson/agents/tree/main/plugins/shell-scripting/skills/bash-defensive-patterns => bash-defensive-patterns
-https://github.com/wshobson/agents/tree/main/plugins/shell-scripting/skills/shellcheck-configuration => shellcheck-configuration
+
 https://github.com/wshobson/agents/tree/main/plugins/startup-business-analyst/skills/market-sizing-analysis => market-sizing-analysis
 https://github.com/wshobson/agents/tree/main/plugins/startup-business-analyst/skills/team-composition-analysis => team-composition-analysis
 https://github.com/wshobson/agents/tree/main/plugins/systems-programming/skills/rust-async-patterns => rust-async-patterns
@@ -208,13 +208,13 @@ https://github.com/oimiragieo/agent-studio/tree/main/.claude/skills/java-expert 
 
 https://github.com/giuseppe-trisciuoglio/developer-kit/tree/main/plugins/developer-kit-java/skills/graalvm-native-image => graalvm-native-image
 
-https://github.com/mcollina/skills/tree/main/skills/linting-neostandard-eslint9 => linting-neostandard-eslint9
+
 https://github.com/mcollina/skills/tree/main/skills/typescript-magician => typescript-magician
 
 https://github.com/proffesor-for-testing/agentic-qe/tree/main/.claude/skills/brutal-honesty-review => brutal-honesty-review
 https://github.com/proffesor-for-testing/agentic-qe/tree/main/.claude/skills/six-thinking-hats => six-thinking-hats
 
-https://github.com/SethCalkins/claude-ios-swift-plugin/tree/main/skills/swift-concurrency-guard => swift-concurrency-guard
+
 https://github.com/SethCalkins/claude-ios-swift-plugin/tree/main/skills/swift-concurrency-expert => swift-concurrency-expert
 https://github.com/SethCalkins/claude-ios-swift-plugin/tree/main/skills/app-store-changelog => app-store-changelog
 https://github.com/SethCalkins/claude-ios-swift-plugin/tree/main/skills/swiftui-performance-audit => swiftui-performance-audit
@@ -263,7 +263,7 @@ https://github.com/alibaba/arthas/tree/master/skills/spring-context => arthas-sp
 
 https://github.com/majiayu000/claude-skill-registry/tree/main/skills/data/feature-dev => feature-dev
 
-https://github.com/nette/claude-code/tree/master/plugins/nette-dev/skills/phpstan-analysis => phpstan-analysis
+
 https://github.com/nette/claude-code/tree/master/plugins/nette-dev/skills/php-doc => php-doc
 
 https://github.com/pentiminax/agent-skills/tree/main/skills/phpunit-best-practices => phpunit-best-practices

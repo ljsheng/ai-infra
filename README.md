@@ -262,7 +262,6 @@ node ./scripts/validate-repo.js
 | [leads-researcher](skills/leads-researcher/SKILL.md) | This skill should be used when users need to research leads, find company inf...。 |
 | [legal-risk-assessment](skills/legal-risk-assessment/SKILL.md) | Assess and classify legal risks using a severity-by-likelihood framework with...。 |
 | [lesson-learned](skills/lesson-learned/SKILL.md) | Analyze recent code changes via git history and extract software engineering...。 |
-| [linting-neostandard-eslint9](skills/linting-neostandard-eslint9/SKILL.md) | Configures ESLint v9 flat config and neostandard for JavaScript and TypeScrip...。 |
 | [linux-privilege-escalation](skills/linux-privilege-escalation/SKILL.md) | This skill should be used when the user asks to "escalate privileges on Linux...。 |
 | [linux-shell-scripting](skills/linux-shell-scripting/SKILL.md) | This skill should be used when the user asks to "create bash scripts", "autom...。 |
 | [liquid-glass-design](skills/liquid-glass-design/SKILL.md) | iOS 26 液态玻璃设计系统 — 适用于 SwiftUI、UIKit 和 WidgetKit 的动态玻璃材质，具有模糊、反射和交互式变形效果。 |
@@ -307,7 +306,6 @@ node ./scripts/validate-repo.js
 | [personal-branding-advanced](skills/personal-branding-advanced/SKILL.md) | 高级个人品牌建设 - 从内容创作者到行业意见领袖的系统性品牌架构。 |
 | [php-doc](skills/php-doc/SKILL.md) | Invoke BEFORE writing phpDoc。 |
 | [php-pro](skills/php-pro/SKILL.md) | Use when building PHP applications with modern PHP 8.3+ features, Laravel, or...。 |
-| [phpstan-analysis](skills/phpstan-analysis/SKILL.md) | Invoke BEFORE running PHPStan or fixing PHPStan errors。 |
 | [phpunit-best-practices](skills/phpunit-best-practices/SKILL.md) | PHPUnit testing best practices and conventions guide。 |
 | [pitch-deck-reviewer](skills/pitch-deck-reviewer/SKILL.md) | Review and critique VC pitch decks using the ABC Framework and Inevitable Sto...。 |
 | [plan-review](skills/plan-review/SKILL.md) | Pre-implementation plan audit that stress-tests scope, assumptions, risks, an...。 |
@@ -370,7 +368,6 @@ node ./scripts/validate-repo.js
 | [service-monitor](skills/service-monitor/SKILL.md) | Use when the user wants to check if services are running, verify endpoints ar...。 |
 | [session-handoff](skills/session-handoff/SKILL.md) | Creates comprehensive handoff documents for seamless AI agent session transfe...。 |
 | [shadcn-ui](skills/shadcn-ui/SKILL.md) | Expert guidance for integrating and building applications with shadcn/ui comp...。 |
-| [shellcheck-configuration](skills/shellcheck-configuration/SKILL.md) | 配置并使用 ShellCheck 提升 shell 脚本质量。 |
 | [similarity-search-patterns](skills/similarity-search-patterns/SKILL.md) | 构建向量数据库语义检索与近邻搜索方案。 |
 | [site-analyze](skills/site-analyze/SKILL.md) | 网站机房溯源全维度分析工具。当用户要求分析某个网站的机房位置、CDN、IP归属、路由链路、响应延迟、SSL证书、子域名等信息时使用。支持通过 DNS ov...。 |
 | [site-architecture](skills/site-architecture/SKILL.md) | 规划网站结构、导航、URL 与内链体系。 |
@@ -399,7 +396,6 @@ node ./scripts/validate-repo.js
 | [stride-analysis-patterns](skills/stride-analysis-patterns/SKILL.md) | 用 STRIDE 方法系统识别安全威胁。 |
 | [surprise-me](skills/surprise-me/SKILL.md) | 组合现有 skill 生成意外但完整的创意成果。 |
 | [swift-concurrency-expert](skills/swift-concurrency-expert/SKILL.md) | Swift Concurrency review and remediation for Swift 6.2+。 |
-| [swift-concurrency-guard](skills/swift-concurrency-guard/SKILL.md) | Enforce Swift concurrency best practices with deterministic blocking rules。 |
 | [swiftui-performance-audit](skills/swiftui-performance-audit/SKILL.md) | Audit and improve SwiftUI runtime performance from code review and architectu...。 |
 | [swiftui-ui-patterns](skills/swiftui-ui-patterns/SKILL.md) | Best practices and example-driven guidance for building SwiftUI views and com...。 |
 | [swiftui-view-refactor](skills/swiftui-view-refactor/SKILL.md) | Refactor and review SwiftUI view files for consistent structure, dependency i...。 |

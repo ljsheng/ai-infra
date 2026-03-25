@@ -1,5 +1,6 @@
 import { execFileSync } from "child_process";
-import { extname, basename, sep } from "path";
+import { existsSync } from "fs";
+import { extname, basename, dirname, join, resolve } from "path";
 
 const isWin = process.platform === "win32";
 
@@ -30,4 +31,17 @@ export function matchName(filePath, names) {
 export function pathContains(filePath, segment) {
   const normalized = filePath.replaceAll("\\", "/");
   return normalized.includes(`/${segment}/`);
+}
+
+/** 从文件所在目录向上查找配置文件，返回所在目录或 null */
+export function findUp(startPath, fileNames) {
+  let dir = dirname(resolve(startPath));
+  while (true) {
+    for (const name of fileNames) {
+      if (existsSync(join(dir, name))) return dir;
+    }
+    const parent = dirname(dir);
+    if (parent === dir) return null;
+    dir = parent;
+  }
 }
