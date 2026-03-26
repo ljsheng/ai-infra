@@ -316,7 +316,7 @@ Prompt Files:
 **DO NOT** pass ad-hoc inline text to `--prompt` without first saving prompt files. The generation command should either use `--promptfiles prompts/NN-{type}-{slug}.md` or read the saved file content for `--prompt`.
 
 **Execution choice**:
-- If multiple illustrations already have saved prompt files and the task is now plain generation, prefer `baoyu-image-gen` batch mode (`build-batch.ts` -> `main.ts --batchfile`)
+- If multiple illustrations already have saved prompt files and the task is now plain generation, prefer `baoyu-imagine` batch mode (`build-batch.ts` -> `main.ts --batchfile`)
 - Use subagents only when each illustration still needs separate prompt rewriting, style exploration, or other per-image reasoning before generation
 
 **CRITICAL - References in Frontmatter**:
@@ -352,7 +352,7 @@ Check available skills. If multiple, ask user.
 
 | Skill Supports `--ref` | Action |
 |------------------------|--------|
-| Yes (e.g., baoyu-image-gen with Google) | Pass reference images via `--ref` |
+| Yes (e.g., baoyu-imagine with Google) | Pass reference images via `--ref` |
 | No | Convert to text description, append to prompt |
 
 **Verification**: Before generating, confirm reference processing:

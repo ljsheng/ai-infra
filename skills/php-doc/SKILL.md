@@ -1,6 +1,6 @@
 ---
 name: php-doc
-description: Invoke BEFORE writing phpDoc.
+description: Invoke BEFORE writing phpDoc. Provides conventions for PHP docblocks: class, method, property, and exception documentation style, @param/@return/@var annotations, generic array types (array<T> vs list<T>), conditional return types, when to skip documentation, and formatting rules. Use this skill whenever writing, editing, reviewing, or refactoring phpDoc comments, docblocks, or type annotations in /** */ blocks — even when the user just says "document this class" or asks about @return types without explicitly mentioning "phpDoc".
 ---
 
 ## Documentation (phpDoc)

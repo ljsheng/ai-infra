@@ -285,7 +285,6 @@ node ./scripts/validate-repo.js
 | [model-first-reasoning](skills/model-first-reasoning/SKILL.md) | Apply Model-First Reasoning (MFR) to code generation tasks。 |
 | [modern-javascript-patterns](skills/modern-javascript-patterns/SKILL.md) | 采用 ES6+ 现代 JavaScript 语法与模式。 |
 | [mom-test](skills/mom-test/SKILL.md) | Talk to customers without leading them using Mom Test rules: discuss their li...。 |
-| [monitoring-observability](skills/monitoring-observability/SKILL.md) | Set up monitoring, logging, and observability for applications and infrastruc...。 |
 | [mysql-best-practices](skills/mysql-best-practices/SKILL.md) | MySQL development best practices for schema design, query optimization, and d...。 |
 | [narrative-text-visualization](skills/narrative-text-visualization/SKILL.md) | Generate structured narrative text visualizations from data using T8 Syntax。 |
 | [nestjs-expert](skills/nestjs-expert/SKILL.md) | Creates and configures NestJS modules, controllers, services, DTOs, guards, a...。 |
@@ -420,7 +419,6 @@ node ./scripts/validate-repo.js
 | [typescript-magician](skills/typescript-magician/SKILL.md) | Designs complex generic types, refactors `any` types to strict alternatives,...。 |
 | [update-markdown-file-index](skills/update-markdown-file-index/SKILL.md) | 更新 Markdown 文件中的目录或文件索引区块。 |
 | [upgrading-react-native](skills/upgrading-react-native/SKILL.md) | Upgrades React Native apps to newer versions by applying rn-diff-purge templa...。 |
-| [user-guide-writing](skills/user-guide-writing/SKILL.md) | Write clear and helpful user guides and tutorials for end users。 |
 | [uv-package-manager](skills/uv-package-manager/SKILL.md) | 用 uv 管理 Python 依赖、虚拟环境和项目工作流。 |
 | [ux-heuristics](skills/ux-heuristics/SKILL.md) | Evaluate and improve interface usability using heuristic analysis。 |
 | [ux-researcher-designer](skills/ux-researcher-designer/SKILL.md) | 支持用户研究、画像、旅程图与可用性验证。 |

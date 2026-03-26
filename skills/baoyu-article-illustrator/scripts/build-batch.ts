@@ -29,8 +29,8 @@ Options:
   --prompts <path>     Path to prompts directory
   --output <path>      Path to output batch.json
   --images-dir <path>  Directory for generated images
-  --provider <name>    Provider for baoyu-image-gen batch tasks (default: replicate)
-  --model <id>         Model for baoyu-image-gen batch tasks (default: google/nano-banana-pro)
+  --provider <name>    Provider for baoyu-imagine batch tasks (default: replicate)
+  --model <id>         Model for baoyu-imagine batch tasks (default: google/nano-banana-pro)
   --ar <ratio>         Aspect ratio for all tasks (default: 16:9)
   --quality <level>    Quality for all tasks (default: 2k)
   --jobs <count>       Recommended worker count metadata (optional)

@@ -280,5 +280,5 @@ TEXTURE: Halftone transitions between sides
 If watermark enabled in preferences, append:
 
 ```
-Include a subtle watermark "[content]" positioned at [position] with approximately [opacity*100]% visibility.
+Include a subtle watermark "[content]" positioned at [position].
 ```

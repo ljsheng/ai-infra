@@ -3,9 +3,15 @@
   "slug": "site-analyze",
   "displayName": "site analyzing tools",
   "latest": {
-    "version": "1.0.0",
-    "publishedAt": 1772509789771,
-    "commit": "https://github.com/openclaw/skills/commit/5d2691829e1ad229d624a4bc4450eed8c49f2834"
+    "version": "1.0.2",
+    "publishedAt": 1773298763207,
+    "commit": "https://github.com/openclaw/skills/commit/0c3dd65caed4e9c5a06a26211bb782ac2b56285b"
   },
-  "history": []
+  "history": [
+    {
+      "version": "1.0.0",
+      "publishedAt": 1772509789771,
+      "commit": "https://github.com/openclaw/skills/commit/5d2691829e1ad229d624a4bc4450eed8c49f2834"
+    }
+  ]
 }
