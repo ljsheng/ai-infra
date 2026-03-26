@@ -254,6 +254,7 @@ https://github.com/compnew2006/Spec-Kit-Antigravity-Skills/tree/main/skills/spec
 https://github.com/compnew2006/Spec-Kit-Antigravity-Skills/tree/main/skills/speckit.reviewer => speckit.reviewer
 https://github.com/compnew2006/Spec-Kit-Antigravity-Skills/tree/main/skills/speckit.specify => speckit.specify
 https://github.com/compnew2006/Spec-Kit-Antigravity-Skills/tree/main/skills/speckit.status => speckit.status
+https://github.com/compnew2006/Spec-Kit-Antigravity-Skills/tree/main/skills/speckit.tasks => speckit.tasks
 https://github.com/compnew2006/Spec-Kit-Antigravity-Skills/tree/main/skills/speckit.taskstoissues => speckit.taskstoissues
 https://github.com/compnew2006/Spec-Kit-Antigravity-Skills/tree/main/skills/speckit.tester => speckit.tester
 https://github.com/compnew2006/Spec-Kit-Antigravity-Skills/tree/main/skills/speckit.validate => speckit.validate
